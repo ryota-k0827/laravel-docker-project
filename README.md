@@ -21,7 +21,7 @@ git clone https://github.com/ryota-k0827/laravel-docker-project.git
 cd laravel-docker-project
 ```
 
-### 3. 初期化(初回のみ）
+### 3. 初期化（初回のみ）
 
 ```sh
 # 初回実行コマンド
