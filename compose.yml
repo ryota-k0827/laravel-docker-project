@@ -19,7 +19,6 @@ services:
     container_name: "db"
     build:
       dockerfile: "./container/db/Dockerfile"
-    platform: linux/x86_64
     ports:
       - "3306:3306" # ホスト側のポート:コンテナ側のポート
     environment:  # 環境変数
