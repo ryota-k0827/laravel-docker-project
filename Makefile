@@ -5,10 +5,10 @@ init:
 	code --install-extension zobo.php-intellisense
 	code --install-extension frifi2k.format-html-in-php
 	code --install-extension bmewburn.vscode-intelephense-client
-	docker compose build
+	docker compose build --no-cache
 
 build:
-	docker compose build
+	docker compose build --no-cache
 
 up:
 	docker compose up
