@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true, // ファイルを保存するときにフォーマットします。
+    "editor.formatOnPaste": true, // 貼り付けた内容がエディターにより自動的にフォーマットされるかどうかを制御します。
+    "editor.formatOnType": true, // エディターで入力後に自動的に行のフォーマットを行うかどうかを制御します。
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client", // 他のすべてのフォーマッタ設定よりも優先される、既定のフォーマッタを定義します。
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true // ファイルの保存時に自動修正アクションを実行するかどうかを制御します。
+    },
+    "editor.tabSize": 4, // 1つのタブに相当するスペースの数。
+    "[dockerfile]": { // 言語に対して上書きされるエディター設定を構成します。
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker" // 他のすべてのフォーマッタ設定よりも優先される、既定のフォーマッタを定義します。
+    }
+}
