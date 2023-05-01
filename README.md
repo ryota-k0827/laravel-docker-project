@@ -23,7 +23,7 @@ cd laravel-docker-project
 
 ### 3. 初期化（初回のみ）
 
-`.env`の生成, vscodeの拡張機能インストールを行います
+`.env`の生成、vscodeの拡張機能インストール、dockerコンテナのビルドを一括で行います
 
 ```sh
 # 初回実行コマンド
