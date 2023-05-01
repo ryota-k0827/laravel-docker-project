@@ -1,0 +1,16 @@
+services:
+  web:
+    container_name: "web"
+    build:
+      dockerfile: "./container/web/Dockerfile"
+    ports: # ポートフォワード
+      - "8080:80" # ホスト側のポート:コンテナ側のポート
+    volumes:
+      - "./src:/var/www/html" # ホスト側のディレクトリ:コンテナ側のディレクトリ
+
+  php:
+    container_name: "php"
+    build:
+      dockerfile: "./container/php/Dockerfile"
+    volumes:
+      - "./src:/var/www/html" # ホスト側のディレクトリ:コンテナ側のディレクトリ
