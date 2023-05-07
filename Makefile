@@ -1,29 +1,33 @@
+dc := docker compose
+de := docker exec -it
+
 init:
 	cp src/.env.example src/.env
-	code --install-extension cweijan.vscode-mysql-client2
-	code --install-extension ms-azuretools.vscode-docker
-	code --install-extension zobo.php-intellisense
-	code --install-extension frifi2k.format-html-in-php
-	code --install-extension bmewburn.vscode-intelephense-client
-	docker compose build --no-cache
+	$(MAKE) build composer/install
 
 build:
-	docker compose build --no-cache
+	$(dc) build --no-cache
 
 up:
-	docker compose up
+	$(dc) up
 
 up-d:
-	docker compose up -d
+	$(dc) up -d
 
 down:
-	docker compose down
+	$(dc) down
 
 exec/web:
-	docker exec -it web bash
+	$(de) web bash
 
 exec/php:
-	docker exec -it php bash
+	$(de) php bash
 
 exec/db:
-	docker exec -it db bash
+	$(de) db bash
+
+composer/install:
+	$(de) php composer install
+
+open/web:
+	open http://localhost:8080

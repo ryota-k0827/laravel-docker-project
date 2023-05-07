@@ -63,7 +63,7 @@ cd laravel-docker-project
 
 ### 3. 初期化（初回のみ）
 
-`.env`の生成、vscodeの拡張機能インストール、dockerコンテナのビルドを一括で行います
+`.env`の生成、コンテナのビルド、composerインストールまでを一括で行います
 
 ```sh
 # 初回実行コマンド
@@ -75,14 +75,14 @@ make init
 ```sh
 # コンテナ起動
 make up
-# デタッチモードで起動
+# デタッチモードで起動する場合
 make up-d
 ```
 
 ### 4. ブラウザでアクセスする
 
 ```sh
-open http://localhost:8080
+make open/web
 ```
 
 以下の画面が確認できれば完了
