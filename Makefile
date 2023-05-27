@@ -31,3 +31,6 @@ composer/install:
 
 open/web:
 	open http://localhost:8080
+
+open/pma:
+	open http://localhost:4000
